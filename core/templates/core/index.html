@@ -7,49 +7,236 @@
 		<title> Tess Arnold Organization </title>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="{% static 'core/css/style.css' %}">
+
 	</head>
 	
 	<body>
-		<div class="header text-center">
-			<a>
-				<img class="img-fluid" src="{% static 'core/images/header.png' %}" style="width: 50em" alt="Tess Arnold Organization"></img>
-			</a>
+		<div id="nav-header-elements bg-light" class="">
+			<div class="header text-center">
+				<a>
+					<img class="img-fluid" src="{% static 'core/images/logo_head.svg' %}" style="width: 40em" alt="Tess Arnold Organization"></img>
+				</a>
+			</div>
+
+			<nav class="navbar navbar-expand-lg navbar-light bg-light text-black">
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="nav justify-content-center navbar-nav mx-auto text-black">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Services</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="#">Gallery</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="#">Blog</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="#">About</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="#">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
 		</div>
 
-		<nav class="navbar navbar-expand-lg justify-content-center navbar-light bg-light">
-			<a class="navbar-brand nav-logo" href="#">
-				<img class="nav-logo" src="{% static 'core/images/logo.png' %}" alt="LOGO"></img>
-			</a>
+		<div class="container-fluid mt-5">
+			<div class="row">
+				<!-- First Div (5/8) -->
+				<div class="col-md-2"></div>
 
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+				<div class="col-md-4 px-0">
+					<div class="d-flex flex-column text-left text-left bg-light text-black p-3">
+						<!-- Content for the first div goes here -->
+						<h3 style="font-family: 'Gill Sans',sans-serif; font-weight: lighter">Our Plan</h3>
+						<h1 style="font-family: 'Georgia', serif; font-weight: normal">Your Loved Items, Our Careful Eye</h1>
+						<p class="text-md-left">
+							At Tess Arnold Organization we help people who are looking to make life simpler,
+							so you and your family can more easily enjoy the next stage of life.
+							We specialize in helping people declutter, downsize, and digitize their stuff.
+							We start with the places that are the least sentimental like storage units,
+							attics, garages, cellars, and closets. We then move on to clothes, books,
+							and furniture.
+							We save the special trinkets, photos, and paper for last.
+							We love working with people who are looking to:
 
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="#">Services</a>
-					</li>
+							<ul class="list-group">
+								<li class="list-group-item">
+									Downsize their home or move to retirement communities
+								</li>
+								<li class="list-group-item">
+									Clear their kids’ stuff out now that they are empty nesters
+								</li>
+								<li class="list-group-item">
+									Clean up after themselves so their loved ones don’t have to when they are gone
+								</li>
+								<li class="list-group-item">
+									Prepare extra rooms for new additions to the family
+								</li>
+							</ul>
 
-					<li class="nav-item">
-						<a class="nav-link" href="#">Gallery</a>
-					</li>
+							Our approach is less about cute baskets and more
+							about practically editing down possessions.
+							Our goal is to recycle, rehome, repurpose,
+							or reuse the treasured items that you simply don’t need anymore.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4 px-0 h-10">
+					<img class="img-fluid" style="height: 100%" src="{% static 'core/images/cleanhome.jpg' %}"></img>
+				</div>
 
-					<li class="nav-item">
-						<a class="nav-link" href="#">Blog</a>
-					</li>
+				<div class="col-md-2">
 
-					<li class="nav-item">
-						<a class="nav-link" href="#">About</a>
-					</li>
-
-					<li class="nav-item">
-						<a class="nav-link" href="#">Contact</a>
-					</li>
-				</ul>
+				</div>
 			</div>
-		</nav>
 
+			<div class="row mt-5">
+				<div class="col-md-2"></div>
+				<div class="col-md-4 px-0 position-relative text-center">
+					<img class="img-fluid" src="{% static 'core/images/house.svg' %}" alt="Organized Home Image">
+					<div class="d-flex justify-content-center flex-column align-items-center bg-light col-md-9 position-absolute top-50 start-50 translate-middle" style="height: 80%;">
+						<h3 style="font-family: 'Georgia', serif">Moves and Relocations</h3>
+						<p>
+							Let us manage all the logistics -- from prepping for the big
+							day to getting you settled in your new home
+						</p>
+						<button class="btn btn-dark  rounded-0">GET MOVING</button>
+					</div>
+				</div>
+				<div class="col-md-4 px-0 position-relative text-center">
+					<img class="img-fluid" src="{% static 'core/images/pantry.svg' %}" alt="Organized Home Image">
+					<div class="d-flex justify-content-center flex-column align-items-center bg-light col-md-9 position-absolute top-50 start-50 translate-middle" style="height: 80%;">
+						<h3 style="font-family: 'Georgia', serif">Clutter Cleanse</h3>
+						<p>
+							Our expert organizers provide a personalized shopping list
+							and a step-by-step instructions on how to make your space
+							NEAT
+						</p>
+						<button class="btn btn-dark rounded-0">GET ORGANIZED</button>
+					</div>
+				</div>
+
+				<div class="col-md-2"></div>
+			</div>
+		</div>
+
+		<div class="row mt-5">
+			<div class="col-md-2"></div>
+
+			<div class="col-md-8 bg-light">
+				<div class="bg-light m-3">
+					<div class="row">
+						<div class="col-md-8 text-left">
+							<h1 style="font-family: 'Georgia', serif">''</h1>
+							<p>
+								"Tess Arnold Organization delivered a seamless and compassionate experience in moving my
+								parents to a better home for their age.
+								From meticulous planning to personalized care, their professionalism and dedication
+								exceeded expectations.
+								I highly recommend them for anyone seeking a smooth transition for their loved ones.
+							</p>
+							<h4>Debra Ryans</h4>
+							<h5>Owner of StrategicSpark Marketing Solutions</h5>
+						</div>
+						<div class="d-flex align-content-center justify-content-right col-md-4 ">
+							<img class="fluid-image" style="width: 70%" src="{% static 'core/images/woman.png' %}"></img>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+
+		<div class="row mt-5">
+			<div class="col-md-1"></div>
+
+			<div class="col-md-10 bg-light">
+				<div class="bg-light m-3">
+					<div class="row">
+						<div class="col-md-1"></div>
+						<div class="col-md-8 text-left">
+							<h1 style="font-family: 'Georgia', serif">Join Our Mailing List</h1>
+							<form>
+								<div class="mb-3">
+									<label for="email" class="form-label">EMAIL</label>
+									<input type="text" class="form-control" id="name" placeholder="Enter your name">
+								</div>
+								<button type="submit" class="btn btn-dark rounded-0">Submit</button>
+							</form>
+						</div>
+						<div class="d-flex align-content-center justify-content-right col-md-3 ">
+							<img class="fluid-image" style="width: 70%" src="{% static 'core/images/FakeLogo.png' %}"></img>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="col-md-1"></div>
+		</div>
+
+		<div class="row d-flex flex-row justify-content-center align-items-end text-center bg-dark text-white">
+			<div class="col-md-2 m-5">
+				<h4> MENU </h4>
+			</div>
+
+			<div class="col-md-2 m-5">
+				<img class="fluid-image" style="width: 70%; filter: invert(1);" src="{% static 'core/images/FakeLogo.png' %}"></img>
+			</div>
+
+			<div class="col-md-2 m-5">
+				<h4> Contact</h4>
+			</div>
+		<div>
+		<div class="row d-flex flex-row justify-content-center align-items-start text-center bg-dark text-white">
+
+			<div class="col-md-2 m-5">
+				<a class="link-light" href="#">Services</a>
+				<a class="link-light" href="#">Gallery</a>
+				<a class="link-light" href="#">Blog</a>
+				<a class="link-light" href="#">About</a>
+				<a class="link-light" href="#">Contact</a>
+			</div>
+
+			<div class="col-md-2 m-5">
+				<p class="text-center text-white">
+					Tess Arnold Organization + Design is a company specializing in interior design,
+					general contracting, and professional organization services.
+					Based in Salt Lake City, Utah, we bring creativity, efficiency,
+					and style to every project, making spaces beautiful and functional.
+					Whether you're looking to enhance your home or workspace,
+					Tess Arnold Organization + Design is here to transform your vision into reality.
+				</p>
+
+				<p>
+					©2024 Tess Arnold Organization. All rights reserved.
+				</p>
+
+			</div>
+
+			<div class="col-md-2 m-5">
+				<p>
+					636 North 300 East,
+
+					Salt Lake City, Utah
+
+					(801) 555-1234
+
+					admin@tessarnoldorganization.com
+				</p>
+			</div>
+		</div>
 
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 	</body>
