@@ -1,4 +1,11 @@
-{% load static %}
+h1 {
+	font-family: 'Georgia', serif;
+}
+
+h3 {
+	font-family: 'Gill Sans',sans-serif;
+	font-weight: lighter;
+}
 
 .nav-logo {
 	margin-left: 10px;
@@ -8,6 +15,10 @@
 .header {
 	justify-content: center;
 	width: 100vw;
+}
+
+.header-image {
+	cursor: pointer;
 }
 
 .container-relative {

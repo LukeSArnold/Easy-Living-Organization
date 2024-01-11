@@ -1,19 +1,16 @@
 {% load static %}
-
-<DOCTYPE html>
-
 <html lang="en">
 	<head>
+		<meta charset="UTF-8">
 		<title> Tess Arnold Organization </title>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="{% static 'core/css/style.css' %}">
-
 	</head>
 	
 	<body>
 		<div id="nav-header-elements bg-light" class="">
 			<div class="header text-center">
-				<a>
+				<a href="{% url 'home' %}" class="header-image">
 					<img class="img-fluid" src="{% static 'core/images/logo_head.svg' %}" style="width: 40em" alt="Tess Arnold Organization"></img>
 				</a>
 			</div>
@@ -27,23 +24,23 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="nav justify-content-center navbar-nav mx-auto text-black">
 						<li class="nav-item">
-							<a class="nav-link" href="#">Services</a>
+							<a class="nav-link" href="../services">Services</a>
 						</li>
 
 						<li class="nav-item">
-							<a class="nav-link" href="#">Gallery</a>
+							<a class="nav-link" href="../gallery">Gallery</a>
 						</li>
 
 						<li class="nav-item">
-							<a class="nav-link" href="#">Blog</a>
+							<a class="nav-link" href="../blog">Blog</a>
 						</li>
 
 						<li class="nav-item">
-							<a class="nav-link" href="#">About</a>
+							<a class="nav-link" href="../about">About</a>
 						</li>
 
 						<li class="nav-item">
-							<a class="nav-link" href="#">Contact</a>
+							<a class="nav-link" href="../contact">Contact</a>
 						</li>
 					</ul>
 				</div>
@@ -51,6 +48,17 @@
 		</div>
 
 		<div class="container-fluid mt-5">
+
+			<div class="row" style="background-color: #9FE2BF;">
+				<div class="col-md-4"></div>
+				<div class="col-md-4 m-3 d-flex flex-column justify-content-center text-center">
+					<h1>Schedule a complimentary call</h1>
+					<button class="btn btn-dark rounded-0">SCHEDULE</button>
+
+				</div>
+				<div class="col-md-4"></div>
+
+			</div>
 			<div class="row">
 				<!-- First Div (5/8) -->
 				<div class="col-md-2"></div>
@@ -58,8 +66,8 @@
 				<div class="col-md-4 px-0">
 					<div class="d-flex flex-column text-left text-left bg-light text-black p-3">
 						<!-- Content for the first div goes here -->
-						<h3 style="font-family: 'Gill Sans',sans-serif; font-weight: lighter">Our Plan</h3>
-						<h1 style="font-family: 'Georgia', serif; font-weight: normal">Your Loved Items, Our Careful Eye</h1>
+						<h3>Our Plan</h3>
+						<h1>Your Loved Items, Our Careful Eye</h1>
 						<p class="text-md-left">
 							At Tess Arnold Organization we help people who are looking to make life simpler,
 							so you and your family can more easily enjoy the next stage of life.
@@ -70,17 +78,17 @@
 							We save the special trinkets, photos, and paper for last.
 							We love working with people who are looking to:
 
-							<ul class="list-group">
-								<li class="list-group-item">
+							<ul>
+								<li>
 									Downsize their home or move to retirement communities
 								</li>
-								<li class="list-group-item">
+								<li>
 									Clear their kids’ stuff out now that they are empty nesters
 								</li>
-								<li class="list-group-item">
+								<li>
 									Clean up after themselves so their loved ones don’t have to when they are gone
 								</li>
-								<li class="list-group-item">
+								<li>
 									Prepare extra rooms for new additions to the family
 								</li>
 							</ul>
@@ -138,7 +146,7 @@
 				<div class="bg-light m-3">
 					<div class="row">
 						<div class="col-md-8 text-left">
-							<h1 style="font-family: 'Georgia', serif">''</h1>
+							<h1>''</h1>
 							<p>
 								"Tess Arnold Organization delivered a seamless and compassionate experience in moving my
 								parents to a better home for their age.
@@ -159,15 +167,15 @@
 			<div class="col-md-2"></div>
 		</div>
 
-		<div class="row mt-5">
+		<div class="row mt-5 bg-light">
 			<div class="col-md-1"></div>
 
-			<div class="col-md-10 bg-light">
+			<div class="col-md-10">
 				<div class="bg-light m-3">
 					<div class="row">
 						<div class="col-md-1"></div>
 						<div class="col-md-8 text-left">
-							<h1 style="font-family: 'Georgia', serif">Join Our Mailing List</h1>
+							<h1>Join Our Mailing List</h1>
 							<form>
 								<div class="mb-3">
 									<label for="email" class="form-label">EMAIL</label>
@@ -237,7 +245,6 @@
 				</p>
 			</div>
 		</div>
-
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 	</body>
 </html>    
