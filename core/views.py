@@ -12,9 +12,8 @@ def pricing(request):
 def gallery(request):
     return render(request, 'core/gallery.html')
 
-def about(request):
-    return render(request, 'core/about.html')
-
+def blog(request):
+    return render(request, 'core/newBlog.html')
 def contact(request):
     return render(request, 'core/contact.html')
 
